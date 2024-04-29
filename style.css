@@ -41,7 +41,7 @@ img {
   border-right: 1px solid #D3D3D3;
   border-bottom: 1px solid #D3D3D3;
   
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: center;
 }
