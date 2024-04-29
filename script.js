@@ -172,7 +172,7 @@ function double_click(event){
     }
 }
 
-function Create (col_val, row_val){
+Create = (col_val, row_val) => {
     board.style.display = "grid";
     board.style["grid-template-columns"] = "repeat(" + col_val + ", 23px)";
     board.style["grid-template-rows"] = "repeat(" + row_val + ", 23px)";
@@ -246,11 +246,11 @@ function Create (col_val, row_val){
         //for (let i = 0; i < mineFinder.numRow; i++) console.log(mineFinder.mineField[i]);
 }
 
-generate.addEventListener('click', function(){ 
-    Create (row.value, col.value);
-})
+// generate.addEventListener('click', () => { 
+//     Create (row.value, col.value);
+// })
 
-document.getElementById("Small").addEventListener('click', function(){ Create(8, 8); })
-document.getElementById("Medium").addEventListener('click', function(){ Create(16, 16); })
-document.getElementById("Large").addEventListener('click', function(){ Create(30, 16); })
+document.getElementById("Small").addEventListener('click', () => { Create(8, 8); })
+document.getElementById("Medium").addEventListener('click', () => { Create(16, 16); })
+document.getElementById("Large").addEventListener('click', () => { Create(30, 16); })
 
