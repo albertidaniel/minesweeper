@@ -14,7 +14,7 @@ let mineFinder = {
 
 let countOpen = 0; //counts how many cells are open
 let countMine = 0; //counts how many mines are marked
-
+ 
 const move_j = [-1, 0, 1, -1, 1, -1, 0, 1];
 const move_i = [-1, -1, -1, 0, 0, 1, 1, 1]; 
 
